@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>deacreative</title>
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/banner.css">
+  </head>
+  <body>
+    <div class="d-md-block d-none">
+      <div class="banner">
+      <div class="swiper-container banner_swiper" id="banner-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="banner_swiper_item item-40">
+              <img src="./public/img/banner-1.webp" alt="" />
+            </div>
+            <div class="banner_swiper_item item-60">
+              <img src="./public/img/banner-2.webp" alt="" />
+              <div class="enrose animate">
+                <img class="e" src="./public/img/banner2-e.svg" alt="">
+                <img class="n" src="./public/img/banner2-n.svg" alt="">
+                <img class="r" src="./public/img/banner2-r.svg" alt="">
+                <img class="o" src="./public/img/banner2-o.svg" alt="">
+                <img class="s" src="./public/img/banner2-s.svg" alt="">
+                <img class="e2" src="./public/img/banner2-e2.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="banner_swiper_item item-50">
+              <img src="./public/img/banner-3.webp" alt="" />
+            </div>
+            <div class="banner_swiper_item item-50">
+              <img src="./public/img/banner-4.webp" alt="" />
+              <div class="fashion">
+                <img class="f" src="./public/img/f.svg" alt="">
+                <img class="a" src="./public/img/a.svg" alt="">
+                <img class="s" src="./public/img/s.svg" alt="">
+                <img class="h" src="./public/img/h.svg" alt="">
+                <img class="i" src="./public/img/i.svg" alt="">
+                <img class="o" src="./public/img/o.svg" alt="">
+                <img class="n" src="./public/img/n.svg" alt="">
+                <img class="t" src="./public/img/t.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <div class="banner-pagination" id="banner-pagination"></div>
+    </div>
+
+    <div class="d-md-none">
+      <div class="banner">
+      <div class="swiper-container banner_swiper" id="banner-swiper-m">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="banner_swiper_item item-40">
+              <img src="./public/img/banner-1.webp" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="banner_swiper_item item-60">
+              <img src="./public/img/banner-2.webp" alt="" />
+              <div class="enrose animate">
+                <img class="e" src="./public/img/banner2-e.svg" alt="">
+                <img class="n" src="./public/img/banner2-n.svg" alt="">
+                <img class="r" src="./public/img/banner2-r.svg" alt="">
+                <img class="o" src="./public/img/banner2-o.svg" alt="">
+                <img class="s" src="./public/img/banner2-s.svg" alt="">
+                <img class="e2" src="./public/img/banner2-e2.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="banner_swiper_item item-50">
+              <img src="./public/img/banner-3.webp" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="banner_swiper_item item-50">
+              <img src="./public/img/banner-4.webp" alt="" />
+              <div class="fashion">
+                <img class="f" src="./public/img/f.svg" alt="">
+                <img class="a" src="./public/img/a.svg" alt="">
+                <img class="s" src="./public/img/s.svg" alt="">
+                <img class="h" src="./public/img/h.svg" alt="">
+                <img class="i" src="./public/img/i.svg" alt="">
+                <img class="o" src="./public/img/o.svg" alt="">
+                <img class="n" src="./public/img/n.svg" alt="">
+                <img class="t" src="./public/img/t.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner-pagination" id="banner-pagination-m"></div>
+    </div>
+    
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiperBanner = new Swiper("#banner-swiper", {
+        slidesPerView: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: "#banner-pagination",
+          clickable: true,
+        },
+        loop: true,
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
+        },
+        speed: 1000,
+      })
+
+      var swiperBanner = new Swiper("#banner-swiper-m", {
+        slidesPerView: 1,
+        pagination: {
+          el: "#banner-pagination-m",
+          clickable: true,
+        },
+        loop: true,
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
+        },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        speed: 1000,
+      })
+    </script>
+  </body>
+</html>
